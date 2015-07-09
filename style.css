@@ -1,0 +1,238 @@
+/***************! NORMALIZE.CSS v3.0.3 | MIT License | github.com/necolas/normalize.css ****************/
+
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+
+
+
+/********************* GENERAL ******************/
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f7f9fa;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+           
+
+
+/*************** HOME PAGE CONTENT ***************/
+
+#wrapper {
+    width: 826px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#main-logo #logo {
+    margin-top: 120px;
+}
+
+h1#logo a {
+    display: inline-block; 
+    width: 253px; 
+    height: 43px; 
+    margin: 0 0 60px 0;
+    background: url(../images/searchLogo.png) no-repeat; 
+    text-indent: -9999px;
+    padding: 0;
+}
+
+#wrapper .searchWrap {
+    padding: 0;
+    background-image: url(../images/searchField.png);
+    width: 826px;
+    height: 94px;
+    margin: 0;
+}
+
+#wrapper .searchField {
+    border: none;
+    margin: 26px 0 26px 60px;
+    width: 700px;
+    height: 35px;
+    outline: none;    
+}
+
+
+
+
+/***** HOME PAGE SEARCH BUTTON *****/
+
+#wrapper input.searchButton {
+	cursor: pointer;
+    margin-top: 30px;
+    background: url('../images/searchButton.png') no-repeat top left;
+    border: none; 
+    outline: none;
+	text-indent:-9999px;
+    width: 195px;
+    height: 52px;
+}
+
+#wrapper .searchButtonWrap input.searchButton:hover {
+    background-position: bottom left;
+}
+
+/***** HOME PAGE FOOTER *****/
+
+
+#wrapper .footer {
+    font-size: 12px;
+    color: #777;
+    width: 100%;
+    margin-top: 60px;
+}
+
+#wrapper .footer a {
+    text-decoration: none;
+    color: #777;   
+}
+
+
+
+
+/*************** SEARCH RESULTS PAGE ***************/
+
+
+/*****GENERAL*****/
+
+
+.wrap {
+    width: 1052px;
+    margin: 0 auto;
+    text-align: center;
+} 
+
+
+
+
+/***** HEADER SEARCH RESULTS *****/
+
+
+.header {
+    padding: 0 2px;
+    height: 94px;
+}
+
+.header #logoSmall{
+    float: left;
+    background: url('../images/searchLogoSmall.png') no-repeat;
+    width: 243px;
+    height: 41px;
+    padding-right: 5px;
+}
+
+.header #logoSmall a {
+    text-decoration: none;
+    color: transparent;
+    font-size: 1.4em;
+    width: 243px;
+    height: 41px;
+}
+
+.header .searchWrap {
+    float: right;
+    width: 804px;
+    height: 94px;
+    margin-right: -12px;
+    background: url('../images/searchInputButtonWrap.png') no-repeat top left;
+}
+
+.header .searchWrap input.searchField {
+    margin: 26px 0 0 60px;
+    padding: 10px;
+    width: 515px;
+    outline: none;
+    border: none;
+}
+
+.header .searchWrap input.searchButton {
+	cursor: pointer;
+    float: right;
+    width: 158px;
+    height: 47px;
+	background: url('../images/searchButtonSmall.png') no-repeat top left;
+	border:	none;
+	text-indent: -9999em;
+    margin: 21px 22px 0 0;
+}
+
+.header .searchWrap input.searchButton:hover {
+	background: url('../images/searchButtonSmall.png') no-repeat bottom left;
+}
+
+
+
+ 
+/***** SEARCH RESULTS *****/
+
+
+.wrap .searchResults {
+    background-color: #fff;
+    border: 1px solid #b4c5d5;
+    border-radius: 2px;
+}
+
+.wrap .searchResults .content {
+    width: 972px;
+    margin: 20px auto;
+    padding: 5px 5px 20px 5px;
+
+}
+
+
+
+
+/***** FOOTER CONTENT *****/
+
+
+.wrap .footer {
+    font-size: 12px;
+    color: #777;
+    margin: 20px 0 40px;
+}
+
+.wrap .footer p {
+    margin: 0 0 5px 0;
+    padding: 2px;
+    float: left;
+}
+
+.wrap .footer a {
+    text-decoration: none;
+    color: #777;
+}
+
+.wrap .footer .othersites {
+    float: right;
+}
+
+.wrap .footer .othersites select {
+	margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
